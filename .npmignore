@@ -1,0 +1,12 @@
+src/
+tsconfig.json
+*.ts
+!*.d.ts
+node_modules/
+.git/
+.env
+*.log
+.DS_Store
+*.test.ts
+*.spec.ts
+
