@@ -1,6 +1,6 @@
 {
   "name": "youtube-api-v2",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "YouTube API client - Search, Video, Channel, and Trending APIs",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -40,4 +40,3 @@
     "access": "public"
   }
 }
-    

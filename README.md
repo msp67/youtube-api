@@ -52,6 +52,36 @@ const client = new YouTubeClient({
 
 **Note:** The API endpoint is hardcoded and cannot be changed.
 
+## API Structure
+
+The library is organized into modules, each providing specific functionality:
+
+```
+YouTubeClient
+├── explore
+│   ├── search(keyword, gl?, hl?, uploadDate?, type?, continuation?)
+│   └── suggestions(keyword, gl?, hl?)
+├── video
+│   ├── getDetail(videoId, gl?, hl?)
+│   ├── getComments(videoId, sortBy?, continuation?, gl?, hl?)
+│   └── getReplyComments(continuation, gl?, hl?)
+├── channel
+│   ├── getDetail(channelId, gl?, hl?)
+│   ├── getVideos(channelId, continuation?, gl?, hl?)
+│   ├── getPlaylists(channelId, continuation?, gl?, hl?)
+│   ├── getReleases(channelId, continuation?, gl?, hl?)
+│   ├── getPosts(channelId, continuation?, gl?, hl?)
+│   ├── getShorts(channelId, continuation?, gl?, hl?)
+│   ├── getStore(channelId, continuation?, gl?, hl?)
+│   └── search(channelId, keyword, continuation?, gl?, hl?)
+└── trending
+    ├── getVideo(countryCode?, gl?, hl?)
+    ├── getTopVideo(filterByType?, filterByDate?, countryCode?, gl?, hl?)
+    ├── getSong(countryCode?, filterByDate?, gl?, hl?)
+    ├── getArtist(countryCode?, filterByDate?, gl?, hl?)
+    └── getTopShortSong(countryCode?, filterByType?, filterByDate?, gl?, hl?)
+```
+
 ## API Reference
 
 ### Explore Module
@@ -566,5 +596,3 @@ try {
 ## License
 
 MIT
-
-
