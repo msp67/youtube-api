@@ -1,0 +1,42 @@
+{
+  "name": "youtube-api-v2",
+  "version": "1.0.4",
+  "description": "YouTube API client - Search, Video, Channel, and Trending APIs",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build",
+    "dev": "tsc --watch",
+    "deploy": "npm run build && npm publish --registry=https://registry.npmjs.org/ --access public"
+  },
+  "keywords": [
+    "youtube",
+    "api",
+    "youtube-api",
+    "youtube-client",
+    "youtube-scraper"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.12.2"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.2",
+    "@types/node": "^24.10.1"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "repository": "github:msp67/youtube-api",
+  "bugs": {
+    "url": "https://github.com/msp67/youtube-api/issues"
+  },
+  "homepage": "https://github.com/msp67/youtube-api#readme",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
+  }
+}
